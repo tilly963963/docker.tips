@@ -28,6 +28,7 @@ Dockerfile
     RUN rm -rf ipinfo_2.0.1_linux_amd64.tar.gz
     
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4b76627b-bfc6-4c9d-98b8-fd5ea36893ff/Untitled.png)
+![image](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4b76627b-bfc6-4c9d-98b8-fd5ea36893ff/Untitled.png)
 
 镜像的大小和分层
 
@@ -66,7 +67,7 @@ Dockerfile
         tar zxf ipinfo_2.0.1_linux_amd64.tar.gz && \
         mv ipinfo_2.0.1_linux_amd64 /usr/bin/ipinfo && \
         rm -rf ipinfo_2.0.1_linux_amd64.tar.gz
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1af6d2fa-f690-477b-8a7e-785d1a01a29d/Untitled.png)
+![image](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1af6d2fa-f690-477b-8a7e-785d1a01a29d/Untitled.png)
 .. code-block:: bash
 
     $ docker image ls
