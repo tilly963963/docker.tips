@@ -67,21 +67,21 @@ Dockerfile
         rm -rf ipinfo_2.0.1_linux_amd64.tar.gz
         
 .. code-block:: bash
-PS C: \Users \Peng Xiao\dockerfiles> docker image build
--f dockerfile.good -t ipinfo-good
-[+] Building 15.2s (6/6) FINISHED
-=>[internal] load build definition from dockerfile.good
-=>=> transferring dockerfile: 376B
-=>[internal] load .dockerignore
-=>=> transferring context: 2B
-=>[internall]
-load metadata for docker.io/library/ubuntu:21.04
-=>CACHED [1/2] FROM docker.io/library/ubuntu: 21.04
-=> [2/2] RUN apt-get update &&apt-get install -y wget && wget https://github.com/ipinfo/cli/releases/download/ipinfo-2.0.1/ipinfo_2.0.1_linux_amd64.tar.gz 
-=>exporting to image
-=>=> exporting layers
-=>=> writing image sha256:54ca0f30f5e97c31c7c1265b38bb88cca8630f78f7fec58ccb8ba2f292b5d334
-=>=> naming to docker.10/library/ipinfo-good
+    PS C: \Users \Peng Xiao\dockerfiles> docker image build
+    -f dockerfile.good -t ipinfo-good
+    [+] Building 15.2s (6/6) FINISHED
+    =>[internal] load build definition from dockerfile.good
+    =>=> transferring dockerfile: 376B
+    =>[internal] load .dockerignore
+    =>=> transferring context: 2B
+    =>[internall]
+    load metadata for docker.io/library/ubuntu:21.04
+    =>CACHED [1/2] FROM docker.io/library/ubuntu: 21.04
+    => [2/2] RUN apt-get update &&apt-get install -y wget && wget https://github.com/ipinfo/cli/releases/download/ipinfo-2.0.1/ipinfo_2.0.1_linux_amd64.tar.gz 
+    =>exporting to image
+    =>=> exporting layers
+    =>=> writing image sha256:54ca0f30f5e97c31c7c1265b38bb88cca8630f78f7fec58ccb8ba2f292b5d334
+    =>=> naming to docker.10/library/ipinfo-good
 
 .. code-block:: bash
 
