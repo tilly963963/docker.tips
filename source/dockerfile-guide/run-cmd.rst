@@ -66,9 +66,9 @@ Dockerfile
         mv ipinfo_2.0.1_linux_amd64 /usr/bin/ipinfo && \
         rm -rf ipinfo_2.0.1_linux_amd64.tar.gz
         
+ docker image build -f dockerfile.good -t ipinfo-good
 .. code-block:: bash
-    PS C: \Users \Peng Xiao\dockerfiles> docker image build
-    -f dockerfile.good -t ipinfo-good
+    PS C: \Users \Peng Xiao\dockerfiles> docker image build -f dockerfile.good -t ipinfo-good
     [+] Building 15.2s (6/6) FINISHED
     =>[internal] load build definition from dockerfile.good
     =>=> transferring dockerfile: 376B
