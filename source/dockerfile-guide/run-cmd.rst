@@ -27,7 +27,8 @@ Dockerfile
     RUN mv ipinfo_2.0.1_linux_amd64 /usr/bin/ipinfo
     RUN rm -rf ipinfo_2.0.1_linux_amd64.tar.gz
 
-
+ docker image build -f dockerfile.bad -t ipinfo-bad
+ 
 镜像的大小和分层
 
 .. code-block:: bash
@@ -67,6 +68,7 @@ Dockerfile
         rm -rf ipinfo_2.0.1_linux_amd64.tar.gz
         
  docker image build -f dockerfile.good -t ipinfo-good
+ 
 .. code-block:: bash
     PS C: \Users \Peng Xiao\dockerfiles> docker image build -f dockerfile.good -t ipinfo-good
     [+] Building 15.2s (6/6) FINISHED
